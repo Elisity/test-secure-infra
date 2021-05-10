@@ -1,0 +1,161 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Metadata": {
+		"AWS::CloudFormation::Interface": {
+			"ParameterGroups": [
+				{
+					"Label": "VPC",
+					"Parameters": [
+						"ClassB"
+					]
+				},
+				{
+					"Label": "Resources",
+					"Parameters": [
+						"SetupUrl",
+						"MasterAmiId",
+						"DUPLOEXTDNSPRFX",
+						"DUPLOINTDNSPRFX",
+						"AWSROUTE53DOMAINID"
+					]
+				}
+			]
+		}
+	},
+	"Parameters": {
+		"ClassB": {
+			"Type": "Number",
+			"Description": "Class B of VPC (10.XXX.0.0/16)",
+			"Default": 220,
+			"MinValue": 0,
+			"MaxValue": 255,
+			"ConstraintDescription": "Must be in the range [0-255]"
+		},
+		"DefaultAdmin": {
+			"Type": "String",
+			"Description": "provide the email id of the default admin to login to portal.",
+			"Default": "venkat@duplocloud.net"
+		},
+		"SetupUrl": {
+			"Type": "String",
+			"Description": "Url of the final setup like https://foobar.trials.duplocloud.net",
+			"Default": "https://oneclick.duplocloud.net"
+		},
+		"MasterAmiId": {
+			"Type": "String",
+			"Description": "Provide the AMI-ID",
+			"Default": "ami-06667ba4c39353e1e"
+		},
+		"DUPLOEXTDNSPRFX": {
+			"Type": "String",
+			"Description": "External DNS domain prefix for example .mypublicdomain.com",
+			"Default": ""
+		},
+		"DUPLOINTDNSPRFX": {
+			"Type": "String",
+			"Description": "Internal DNS domain prefix for example .myinternaldomain.com Internal and public can be the same",
+			"Default": ""
+		},
+		"AWSROUTE53DOMAINID": {
+			"Type": "String",
+			"Description": "Route53 domain ID for the above DNS Domain",
+			"Default": ""
+		},
+		"ENABLEBASTION": {
+			"Type": "String",
+			"Description": "Do you want Bastion to be created?",
+			"Default": "YES",
+			"AllowedValues": [
+				"YES",
+				"NO"
+			]
+		},
+		"BastionAmiId": {
+			"Type": "String",
+			"Description": "Provide the AMI-ID",
+			"Default": "ami-08af97ba1ea7f4944"
+		}
+	},
+	"Resources": {
+		"duploVpcNetwork": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://duplo-setup-resources.s3-us-west-2.amazonaws.com/duplo-vpc-network.yaml",
+				"Parameters": {
+					"ClassB": {
+						"Ref": "ClassB"
+					}
+				}
+			}
+		},
+		"duploVpcNat": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://duplo-setup-resources.s3-us-west-2.amazonaws.com/duplo-vpc-nat.yaml",
+				"Parameters": {
+					"ParentVPCStack": {
+						"Fn::Select": [
+							"1",
+							{
+								"Fn::Split": [
+									"/",
+									{
+										"Ref": "duploVpcNetwork"
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"duploVpcResources": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://duplo-setup-resources.s3-us-west-2.amazonaws.com/duplo-vpc-resources-all-minimalist.json",
+				"Parameters": {
+					"ParentVPCStack": {
+						"Fn::Select": [
+							"1",
+							{
+								"Fn::Split": [
+									"/",
+									{
+										"Ref": "duploVpcNetwork"
+									}
+								]
+							}
+						]
+					},
+					"SetupUrl": {
+						"Ref": "SetupUrl"
+					},
+					"MasterAmiId": {
+						"Ref": "MasterAmiId"
+					},
+					"DUPLOEXTDNSPRFX": {
+						"Ref": "DUPLOEXTDNSPRFX"
+					},
+					"DUPLOINTDNSPRFX": {
+						"Ref": "DUPLOINTDNSPRFX"
+					},
+					"AWSROUTE53DOMAINID": {
+						"Ref": "AWSROUTE53DOMAINID"
+					},
+					"ENABLEBASTION": {
+						"Ref": "ENABLEBASTION"
+					},
+					"BastionAmiId": {
+						"Ref": "BastionAmiId"
+					},
+					"DEFAULTADMINEMAIL": {
+						"Ref": "DefaultAdmin"
+					},
+					"DefaultAdmin": {
+						"Ref": "DefaultAdmin"
+					}
+				}
+			}
+		}
+	}
+}

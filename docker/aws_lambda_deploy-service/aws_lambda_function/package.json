@@ -1,0 +1,8 @@
+{
+  "name": "lambda-js",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "aws-sdk": "^2.490.0"
+  }
+}

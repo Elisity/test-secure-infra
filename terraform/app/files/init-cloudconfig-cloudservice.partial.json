@@ -1,0 +1,614 @@
+{
+  "_id": "string",
+  "globalPollInterval": 0,
+  "regions": [
+    {
+      "availabilityZone": "us-east-2",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "us-east-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "us-west-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "us-west-2",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "ap-south-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "ap-northeast-2",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "ap-southeast-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "ap-southeast-2",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "ap-northeast-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "ca-central-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "eu-central-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "eu-west-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "eu-west-2",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "eu-west-3",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "eu-north-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    },
+    {
+      "availabilityZone": "sa-east-1",
+      "awsServices": [
+        {
+          "serviceType": "vpcs"
+        },
+        {
+          "serviceType": "subnets"
+        },
+        {
+          "serviceType": "ec2"
+        },
+        {
+          "serviceType": "routetables"
+        },
+        {
+          "serviceType": "securitygroups"
+        },
+        {
+          "serviceType": "subnetacls"
+        },
+        {
+          "serviceType": "elasticipaddresses"
+        },
+        {
+          "serviceType": "vpnconnections"
+        },
+        {
+          "serviceType": "vpngateways"
+        },
+        {
+          "serviceType": "customergateways"
+        },
+        {
+          "serviceType": "networkinterfaces"
+        }
+      ]
+    }
+  ]
+}

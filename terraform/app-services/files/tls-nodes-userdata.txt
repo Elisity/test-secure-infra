@@ -1,0 +1,8 @@
+{ 'eth0': '${eth0}', 
+  'eth1': ['${eth1}', '${eth1Public}'],
+  'eth2': '${eth2}',
+  'intag_port': '31000',
+  'ipAddress': ['${ipAddress}'],
+  'natmode': '1', 
+  'tlsnode': '1'
+}
