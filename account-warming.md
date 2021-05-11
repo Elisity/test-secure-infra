@@ -63,7 +63,7 @@ To be performed by Duplo operations staff:
    - Enable O365 logins
    - Create accounts:
      - raghavan@elisity.com
-     - barath@elisity.com
+     - bharath@elisity.com
 
 ### Elisity operations staff actions
 
